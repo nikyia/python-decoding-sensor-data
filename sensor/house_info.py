@@ -3,7 +3,7 @@ from datetime import date, datetime
 from time import strftime
 
 # Crete class HouseInfo
-class HouseIinfo:
+class HouseIinfo(object):
     #Create class constructor with two arguments (self , class)
     def __init__(self, data):
         self.data = data
@@ -19,7 +19,7 @@ class HouseIinfo:
 
         return field_data
 
-    def get_data_by_date(self, field, rec_date=datetime.now()):
+    def get_data_by_date(self, field, rec_date=datetime.today()):
         field_data = []
 
         for record in self.data:
