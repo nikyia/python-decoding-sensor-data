@@ -1,6 +1,5 @@
 # Libraries
-from datetime import date, datetime
-from time import strftime
+from datetime import datetime
 
 # Crete class HouseInfo
 class HouseIinfo(object):
