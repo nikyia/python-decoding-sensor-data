@@ -1,7 +1,7 @@
 # Runner script for all modules
 from load_data import load_sensor_data
-from house_info import HouseIinfo
-from datetime import date, datetime
+from house_info import HouseInfo
+from datetime import datetime, date
 
 ##############################
 # Do not remove these two lines
@@ -20,7 +20,7 @@ print("Loaded records: {}".format(len(data)))
 # Module 3 code here:
 
 # Get HouseInfo Data by Area with sensor_app
-house_info = HouseIinfo(data)
+house_info = HouseInfo(data)
 
 test_area = 1
 
