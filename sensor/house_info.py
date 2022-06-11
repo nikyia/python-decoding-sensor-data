@@ -1,6 +1,6 @@
 # Libraries
-from datetime import datetime, date
-
+from datetime import datetime
+from datetime import date
 # Crete class HouseInfo
 class HouseInfo(object):
     #Create class constructor with two arguments (self , class)
@@ -17,7 +17,7 @@ class HouseInfo(object):
                 field_data.append(record[field])
         return field_data
 
-    def get_data_by_date(self, field, rec_date=datetime.today()):
+    def get_data_by_date(self, field, rec_date=date.today()):
         field_data = []
 
         for record in self.data:
