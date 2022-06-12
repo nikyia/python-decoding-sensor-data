@@ -6,9 +6,6 @@ from datetime import date
 # Create TemeratureData Class
 
 class TemperatureData(HouseInfo):
-    #Create class constructor with two arguments (self , class)
-    def __init__(self, data):
-        self.data = data
     # Create private method convert data to convert temperature data
     def _convert_data(self,data):
         recs = []
@@ -20,11 +17,10 @@ class TemperatureData(HouseInfo):
     # Create new get data by area method
     def get_data_by_area(self, rec_area=0):
         recs = super().get_data_by_area("temperature",rec_area)
-        a = _convert_data(recs)
-        return a
+        return self._convert_data(recs)
 
     # Create new get data by date method
     def get_data_by_date(self, rec_date=date.today()):
         recs = super().get_data_by_date("temperature",rec_date)
 
-        return _convert_data(recs)
+        return self._convert_data(recs)
