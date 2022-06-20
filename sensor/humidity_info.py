@@ -2,7 +2,7 @@ from house_info import HouseInfo
 from datetime import date, datetime
 
 
-class HumidityDate(HouseInfo):
+class HumidityData(HouseInfo):
     def _conver_data(self, data):
         recs = []
 

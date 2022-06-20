@@ -3,7 +3,7 @@ from load_data import load_sensor_data
 from house_info import HouseInfo
 from datetime import datetime, date
 from temperature_info import TemperatureData
-from humidity_info import  HumidityDate
+from humidity_info import  HumidityData
 from statistics import mean
 from particle_count_info import ParticleData
 
@@ -54,7 +54,7 @@ print("\tMaximum: {0}, Minimum: {1} temperatures".format(max(recs), min(recs)))
 
 # Module 4 code here:
 
-humidity_data = HumidityDate(data)
+humidity_data = HumidityData(data)
 recs = humidity_data.get_data_by_area(rec_area=test_area)
 
 print("\nHouse Humidity sensor records for area {} = {}".format(test_area, len(recs)))
